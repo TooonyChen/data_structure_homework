@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<time.h>
+#include <time.h>
 
 struct node
 {
@@ -24,9 +24,9 @@ struct node *generateLinkedList(){
 
     /* Assign data values */
     int upper = 1001;
-    upper++;
     // generate random number from 0 to 1000
-    srand(time(NULL)); // set the seed of random number by time
+    sleep(1);
+    srand(time(NULL));
     one->data = (rand() % upper);
     two->data = (rand() % upper);
     three->data = (rand() % upper);
